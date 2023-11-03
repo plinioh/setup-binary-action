@@ -1,0 +1,24 @@
+name: 'setup-binary-action'
+description: 'Download and Setup a custom binary for usage within a workflow'
+author: 'plinioh'
+
+branding:
+  icon: 'play-circle'
+  color: 'green'
+
+inputs:
+  binaryName:
+    description: 'The name you want your binary to be acessible by'
+    required: true
+  binaryUrl:
+    description: |
+      'The URL pointing to the ".tar.gz" archive that contains the binary'
+    required: true
+  binaryPathInArchive:
+    description: |
+      The path within the ".tar.gz" archive to your binary. e.g:path/to/my-binary
+    required: true
+
+runs:
+  using: node20
+  main: dist/index.js

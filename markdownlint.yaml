@@ -1,0 +1,10 @@
+# Unordered list style
+MD004:
+  style: dash
+
+# Line length
+MD013: false
+
+# Ordered list item prefix
+MD029:
+  style: one
